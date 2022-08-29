@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187299361-30114267-2e0f-4ba4-8b97-2816990b86da.jpg)">
+  <img src="![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187299361-30114267-2e0f-4ba4-8b97-2816990b86da.jpg)">
 </p>
 # <h1 align="center"> Maestro: Projeto engenharia de software II </h1>
 # <h1 align="center"> Membros do grupo: </h1>
