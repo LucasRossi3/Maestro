@@ -1,9 +1,11 @@
 # Maestro: Projeto engenharia de software II
 # Membros do grupo:
-Evandro Rodrigues Tiburcio   	0030481921018 
+Evandro Rodrigues Tiburcio   	0030481921018
+
 Guilherme Kohler Campos Salla   0030482121004
 
 Lucas José Marcondes Rossi   	0030482121023
+
 Regiane Lara          		0030482121
 
 # Resumo
