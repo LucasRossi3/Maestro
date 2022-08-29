@@ -1,4 +1,6 @@
-![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187296719-0799f02a-c92c-4a48-bc04-e02330e192fe.jpg)
+<p align="center">
+  <img src=![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187296719-0799f02a-c92c-4a48-bc04-e02330e192fe.jpg) />
+</p>
 
 # <h1 align="center"> Maestro: Projeto engenharia de software II </h1>
 # <h1 align="center"> Membros do grupo: </h1>
