@@ -12,4 +12,6 @@ Regiane Lara          		0030482121
 
 # Resumo
 
+<p text-align: justify>
 	O software Maestro será um conjunto de micros serviços para poder realizar a  gestão de controle de acesso de portarias, sejam elas orgânicas (atendentes, ou porteiros, atuando no local da portaria), portaria remota (atendentes ficam dentro de uma base operacional), ou como portaria virtual (sem interação humana).
+</p>
