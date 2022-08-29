@@ -1,7 +1,7 @@
 ![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187296251-05afad3b-a4cf-4c4b-b494-37fbeaa427d1.jpg)
 
-# Maestro: Projeto engenharia de software II
-# Membros do grupo:
+# <h1 align="center"> Maestro: Projeto engenharia de software II </h1>
+# <h1 align="center"> Membros do grupo: </h1>
 Evandro Rodrigues Tiburcio   	0030481921018
 
 Guilherme Kohler Campos Salla   0030482121004
