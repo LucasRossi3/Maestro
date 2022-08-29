@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187299229-3660cb2b-ef65-4f50-bb0a-45b8574749ab.jpg)"/>
+  <img width="460" height="300" src="![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187299361-30114267-2e0f-4ba4-8b97-2816990b86da.jpg)">
 </p>
-
 # <h1 align="center"> Maestro: Projeto engenharia de software II </h1>
 # <h1 align="center"> Membros do grupo: </h1>
 Evandro Rodrigues Tiburcio - 0030481921018
