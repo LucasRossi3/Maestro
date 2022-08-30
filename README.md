@@ -22,7 +22,7 @@ Regiane Corrêa de Lara - 0030482121012
 	O projeto Maestro será um conjunto de micros serviços que realizarão a gestão de controle de acesso dos seguimentos de portaria, sendo a orgânica (com atendente in loco - "PO") ou eletrônica (remota - "PR" ou virtual - "PV"). Desses seguimentos, o projeto terá maior ênfase no sistema de portaria remota, sendo esse um nicho de mercado onde não há a presença física de um operador de controle de acesso no cliente, porém, existem vários operadores (para um mesmo cliente) em uma central de operações monitorando a portaria desse cliente a distância.
 
 #### Os objetivos iniciais são:
-* Melhorar a qualidade dos atendimentos, evitando falhas operacionas;
+* Melhorar a qualidade dos atendimentos, evitando falhas operacionais;
 * Melhorar a produtividade da equipe;
 * Fornecer relátorios estratégicos para tomada de decisões para os gestores.
 	
