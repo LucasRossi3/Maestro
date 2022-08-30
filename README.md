@@ -13,7 +13,7 @@ Guilherme Kohler Campos Salla - 0030482121004
 
 Lucas José Marcondes Rossi - 0030482121023
 
-Regiane Lara - 0030482121
+Regiane Corrêa de Lara - 0030482121012
 
 # Resumo
 
