@@ -7,6 +7,8 @@
 # <h1 align="center"> Membros do grupo: </h1>
 Evandro Rodrigues Tiburcio - 0030481921018
 
+Gabriel Leite Cardoso - 0030482121018
+
 Guilherme Kohler Campos Salla - 0030482121004
 
 Lucas José Marcondes Rossi - 0030482121023
@@ -17,7 +19,7 @@ Regiane Lara - 0030482121
 
 <p text-align: justify>
 	<p>
-	O nosso software Maestro será um conjunto de micros serviços que realizarão a  gestão de controle de uma portaria remota. Que é um sistema onde há a presença de um, ou mais, operadores monitorando a portaria de um condomínio a distância, podendo haver a possibilidade de integração com serviços de controle orgânicos (atendentes, ou porteiros, atuando no local da portaria), ou com controle virtual (sem interação humana). O nosso foco é melhorar a produtividade da equipe, já existente, da empresa de portaria remota (colocar nome).
+	O projeto Maestro será um conjunto de micros serviços que realizarão a  gestão de controle de acesso dos seguimentos de portaria, sendo o orgânica (com atendente in loco) ou eletrônica (remota ou virtual). Desses seguimentos, o projeto terá maior enfaze no sistema de portaria remota, sendo esse un nicho de mercado onde há a presença física de de um operador no cliente, porém, existem varios operadores em uma central monitorando a portaria de um condomínio a distância. O objetivo é melhorar a qualidade dos atendimentos, evitando falhas operacionas, melhorar a produtividade da equipe e fornecer relátorios estrrategicos para tomada de decisões para os gestores.
 	<p>
 	
 #### Telas fundamentais:
@@ -49,7 +51,7 @@ Estrutura:
 	Cloud (a definir)
 <p>
 
-# Tecnologias utilizadas para o desenvolvimento do sistema
+# Tecnologias e ferramentas utilizadas para o desenvolvimento do sistema
 
 - Java + Spring Framework (backend);
 - MariaDB (banco de dados);
@@ -57,6 +59,6 @@ Estrutura:
 - React JS (html/css); 
 - Figma;
 - Visual Studio Code;
+- Visual Code;
 - Versionamento de código pelo GitHub;
-
-
+- VM para testes iniciais (Oracle VBOX - Debian 11)
