@@ -15,11 +15,11 @@ Lucas José Marcondes Rossi - 0030482121023
 
 Regiane Corrêa de Lara - 0030482121012
 
-# Resumo
+# <h1 align="center"> Resumo:
 
 <p text-align: justify>
 	<p>
-	O projeto Maestro será um conjunto de micros serviços que realizarão a  gestão de controle de acesso dos seguimentos de portaria, sendo o orgânica (com atendente in loco - "PO") ou eletrônica (remota "PR" ou virtual "PV"). Desses seguimentos, o projeto terá maior ênfase no sistema de portaria remota, sendo esse um nicho de mercado onde há a presença física de de um operador no cliente, porém, existem varios operadores em uma central monitorando a portaria de um condomínio a distância. O objetivo é melhorar a qualidade dos atendimentos, evitando falhas operacionas, melhorar a produtividade da equipe e fornecer relátorios estratégicos para tomada de decisões para os gestores.
+	O projeto Maestro será um conjunto de micros serviços que realizarão a gestão de controle de acesso dos seguimentos de portaria, sendo a orgânica (com atendente in loco - "PO") ou eletrônica (remota "PR" ou virtual "PV"). Desses seguimentos, o projeto terá maior ênfase no sistema de portaria remota, sendo esse um nicho de mercado onde há a presença física de um operador no cliente, porém, existem vários operadores em uma central monitorando a portaria de um condomínio a distância. O objetivo é melhorar a qualidade dos atendimentos, evitando falhas operacionas, melhorar a produtividade da equipe e fornecer relátorios estratégicos para tomada de decisões para os gestores.
 	<p>
 	
 #### Telas fundamentais:
@@ -30,10 +30,10 @@ Regiane Corrêa de Lara - 0030482121012
 - Tela de atendimento operacional (PO e PR).
 
 	<p>
-	O sistema irá contar com uma tela para cadastro de pessoas, possuindo o "tipo de pessoa" que seria uma identificação para diferenciar se a pessoa em questão é um morador, prestador de serviço, visitante, etc. O sistema também contará com a tela principal de utilização, em que haverá grande interação do atendente com o sistema, ou seja, por onde ele realizará os atendimentos remotos com o usuário e controlará equipamentos diversos, utilizando comandos chave.  Contudo, será capaz de controlar a abertura de portões, permitindo assim, a entrada e saída de pessoas, onde será feita identificação e prosseguindo com a liberação (ou não) do usuário que pretende adentrar no condomínio. Esta tela será o nosso principal foco no projeto.
+	O sistema irá contar com uma tela para cadastro de pessoas, possuindo o "tipo de pessoa" que seria uma identificação para diferenciar se a pessoa em questão é um morador, prestador de serviço, visitante, etc. O sistema também contará com a tela principal de utilização, em que haverá grande interação do atendente com o sistema, ou seja, por onde ele realizará os atendimentos remotos com o usuário e controlará equipamentos diversos, utilizando comandos chave. Contudo, será capaz de controlar a abertura de portões, permitindo assim, a entrada e saída de pessoas, onde será feita identificação e prosseguindo com a liberação (ou não) do usuário que pretende adentrar no condomínio. Esta tela será o nosso principal foco no projeto.
 	<p>
 	
-	Um dos pilares do nosso projeto é fazer a integração dos equipamentos, baixar os comandos, o sistema deverá possuir comunicação via voip, ele será software externo, pois conseguimos ter integração mais rápida, se encaixa em micro serviços. Em qualquer um dos segmentos estes dispositivos fornecem comunicação com os atendentes (sendo possível utilização de equipamento externo ou em um módulo do APP). É obrigatório link de internet de aproximadamente 50 Kbps de up/down por equipamento de voz simultâneo. 
+	Um dos pilares do nosso projeto é fazer a integração dos equipamentos, baixar os comandos, o sistema deverá possuir comunicação via voip, ele será software externo, pois conseguimos ter integração mais rápida, que se encaixa em micro serviços. Em qualquer um dos segmentos estes dispositivos fornecem comunicação com os atendentes (sendo possível utilização de equipamento externo ou em um módulo do APP). É obrigatório link de internet de aproximadamente 50 Kbps de up/down por equipamento de voz simultâneo. 
 	<p>
 	
 	O projeto Maestro tem como finalidade atender uma parcela do mercado de segurança patrimonial, nos segmentos de portaria convencional (portaria orgânica - atendimento in-loco; "PO"), portaria remota (atendente dentro de uma base operacional; "PR") e portaria virtual (sem interação de atendente, ou somente exceções; "PV").
@@ -47,11 +47,11 @@ Módulo de controle de acesso: Em qualquer um dos segmentos esse item funciona n
 	Sistema de CFTV: Nos segmentos de PO e PR esses dispositivos são utilizados para auxílio no cadastro e identificação de pessoas e para acompanhamento de quaisquer eventos pertinentes ao local. No segmento de PV é utilizado para tomada de decisões e gatilhos para geração de eventos. Esses dispositivos variam o consumo de banda de 250 ~ 1500 kbps de up e 400 kbps de download.
 	<p>
 
-Estrutura:
+ Estrutura:
 	Cloud (a definir)
 <p>
 
-# Tecnologias e ferramentas utilizadas para o desenvolvimento do sistema
+# Tecnologias e ferramentas utilizadas para o desenvolvimento do sistema:
 
 - Java + Spring Framework (backend);
 - MariaDB (banco de dados);
