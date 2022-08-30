@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99259327/187318644-d6e53541-e582-4f90-81be-aa24393a72b3.png" width="400" />
+<img src="https://user-images.githubusercontent.com/99259327/187318644-d6e53541-e582-4f90-81be-aa24393a72b3.png" width="300" />
 <p>
 
 # <h1 align="center"> *Maestro:* **Projeto engenharia de software II** </h1>
