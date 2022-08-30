@@ -1,4 +1,7 @@
-![Imagem1 jpeg](https://user-images.githubusercontent.com/99259327/187301000-c73c2882-3c09-4717-82ae-454aa736b9b9.jpg)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99259327/187318644-d6e53541-e582-4f90-81be-aa24393a72b3.png" width="400" />
+<p>
 
 # <h1 align="center"> *Maestro:* **Projeto engenharia de software II** </h1>
 # <h1 align="center"> Membros do grupo: </h1>
@@ -28,4 +31,4 @@ Regiane Lara - 0030482121
 - JavaScript
 - React
 
-</p>
+
