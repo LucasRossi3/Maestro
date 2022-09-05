@@ -63,6 +63,5 @@ Módulo de controle de acesso: Em qualquer um dos segmentos esse item funciona n
 - React JS (html/css); 
 - Figma;
 - Visual Studio Code;
-- Visual Code;
 - Versionamento de código pelo GitHub;
 - VM para testes iniciais (Oracle VBOX - Debian 11)
