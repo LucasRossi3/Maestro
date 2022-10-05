@@ -44,6 +44,13 @@ public class PersonService {
 
 	private void updateData(PersonEntity personMonitored, PersonEntity person) {
 		personMonitored.setName(person.getName());
+		personMonitored.setDoc_rg(person.getDoc_rg());
+		personMonitored.setDoc_cpf(person.getDoc_cpf());
+		personMonitored.setBirthday(person.getBirthday());
+		personMonitored.setContact_1(person.getContact_1());
+		personMonitored.setContact_2(person.getContact_2());
+		personMonitored.setContact_3(person.getContact_3());
+		personMonitored.setEmail(person.getEmail());
 	}
 	
 	

@@ -1,4 +1,4 @@
-drop table IF EXISTS tb_pessoas;
+drop table IF EXISTS tb_person;
 drop table IF EXISTS tb_empresas;
 drop table IF EXISTS tb_parceiros;
 drop table IF EXISTS tb_clientes;
@@ -6,31 +6,31 @@ drop table IF EXISTS tb_setores;
 drop table IF EXISTS tb_unidades;
 drop table IF EXISTS tb_moradores;
 
-create table tb_pessoas(
-	codigo int auto_increment,
-    nome varchar (150) not null,
-    documento_rg varchar (9),
-    dococumento_cpf varchar (11),
-    data_nascimento datetime,
-    contato_1 varchar (11),
-    contato_2 varchar (11),
-    contato_3 varchar (11),
-    email varchar (100),
-    CONSTRAINT PRIMARY KEY  PK_tb_pessoas_codigo (codigo)
+create table tb_person(
+	id int auto_increment,
+	name varchar (150) not null,
+	doc_rg varchar (9),
+	doc_cpf varchar (11),
+	birthday datetime,
+	contact_1 varchar (11),
+	contact_2 varchar (11),
+	contact_3 varchar (11),
+	email varchar (100),
+	CONSTRAINT PRIMARY KEY  PK_tb_person_id (id)
 );
 
-create table tb_empresas(
-	codigo int auto_increment,
-    razao_social varchar (200) not null,
-    fantasia varchar (100) not null,
-	cnpj varchar (15),
-    inscricao_estadual varchar (11),
-    data_abertura datetime,
-    contato_1 varchar (11),
-    contato_2 varchar (11),
-    contato_3 varchar (11),
-    email varchar (100),
-    CONSTRAINT PRIMARY KEY PK_tb_empresas_codigo (codigo)
+create table tb_company(
+	id int auto_increment,
+	company_name varchar (200) not null,
+	trading_name varchar (100) not null,
+	doc_cnpj varchar (15),
+	doc_inscricao_estadual varchar (11),
+	company_start datetime,
+	contact_1 varchar (11),
+	contact_2 varchar (11),
+	contact_3 varchar (11),
+	email varchar (100),
+	CONSTRAINT PRIMARY KEY PK_tb_company_id (id)
 );
     
 create table tb_parceiros(
