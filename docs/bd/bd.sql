@@ -33,11 +33,11 @@ create table tb_company(
 	CONSTRAINT PRIMARY KEY PK_tb_company_id (id)
 );
     
-create table tb_parceiros(
-	codigo int auto_increment,
-    id varchar (2),
-    CONSTRAINT PRIMARY KEY PK_tb_parceiros_codigo (codigo),
-    CONSTRAINT FOREIGN KEY FK_tb_parceiros_empresa_codigo (empresa_codigo) references tb_empresas
+create table tb_partner(
+	id int auto_increment,
+	partner_id varchar (2),
+	CONSTRAINT PRIMARY KEY PK_tb_partner_id (id),
+	CONSTRAINT FOREIGN KEY FK_tb_partner_company_id (company_id) references tb_company
 );
 
 create table tb_clientes(
