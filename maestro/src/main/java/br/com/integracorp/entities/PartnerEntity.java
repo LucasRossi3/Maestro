@@ -1,11 +1,16 @@
 package br.com.integracorp.entities;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -27,5 +32,8 @@ public class PartnerEntity {
 	@JoinColumn(name="company_id")
 	private CompanyEntity company;
 	
+	@JsonIgnore
+	@OneToMany(mappedBy = "partner", orphanRemoval = true, cascade = CascadeType.ALL)
+	private Set<ClientEntity> partner = new HashSet<>();
 	
 }

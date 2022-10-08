@@ -3,9 +3,9 @@ package br.com.integracorp.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.integracorp.entities.PartnerEntity;
+import br.com.integracorp.entities.SectorEntity;
 
 @Repository
-public interface PartnerRepository extends JpaRepository<PartnerEntity, Long>{
+public interface SectorRepository extends JpaRepository<SectorEntity, Long>{
 
 }

@@ -10,7 +10,7 @@ import br.com.integracorp.entities.PartnerEntity;
 import br.com.integracorp.repositories.PartnerRepository;
 
 @Service
-public class PartnerService {
+public class UnitService {
 	
 	@Autowired
 	private PartnerRepository partnerRepository;

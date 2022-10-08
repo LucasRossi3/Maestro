@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -47,4 +48,6 @@ public class CompanyEntity {
 	@OneToMany(mappedBy = "company", orphanRemoval = true, cascade = CascadeType.ALL)
 	private Set<PartnerEntity> partner = new HashSet<>();
 	
+	@OneToOne(mappedBy = "company")
+	private ClientEntity clinte;
 }
