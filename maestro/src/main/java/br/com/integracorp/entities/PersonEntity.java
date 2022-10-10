@@ -17,9 +17,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
+
 
 @Data
 @Entity
@@ -29,7 +31,7 @@ public class PersonEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@Column(nullable = false)
 	private String name;
 	
@@ -51,4 +53,5 @@ public class PersonEntity {
 	private ClientEntity client;
 	
 	private String email;
+	
 }

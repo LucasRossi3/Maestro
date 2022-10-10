@@ -20,7 +20,24 @@ public class TestConfig implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
+		String name="Evandro Rodrigues Tiburcio";
+		String doc_rg="470587003";
+		String doc_cpf="35458436881";
+		Date birthday=Date.valueOf("03-03-1990");
+				
+		PersonEntity p1 = new PersonEntity();
 		
+		p1.setEmail("evandro@gmail.com");
+		//p1.email="15988420001";
+		
+		
+		/*p1.setName(name);
+		p1.setDoc_rg(doc_rg);
+		p1.setDoc_cpf(doc_cpf);
+		p1.setBirthday(birthday);
+		
+		personRepository.saveAll(Arrays.asList(p1));
+		*/
 	}
 
 }
