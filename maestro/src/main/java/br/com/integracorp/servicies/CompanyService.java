@@ -47,9 +47,6 @@ public class CompanyService {
 		companyMonitored.setDoc_cnpj(company.getDoc_cnpj());
 		companyMonitored.setDoc_inscricao_estadual(company.getDoc_inscricao_estadual());
 		companyMonitored.setCompany_start(company.getCompany_start());
-		companyMonitored.setContact_1(company.getContact_1());
-		companyMonitored.setContact_2(company.getContact_2());
-		companyMonitored.setContact_3(company.getContact_3());
 		companyMonitored.setEmail(company.getEmail());
 	}
 	

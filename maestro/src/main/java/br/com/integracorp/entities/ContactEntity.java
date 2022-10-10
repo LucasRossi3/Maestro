@@ -1,38 +1,40 @@
 package br.com.integracorp.entities;
 
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "tb_client")
+@Table(name = "tb_contact")
 public class ContactEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
-	private String tipo;
 	
-	@ManyToOne
-	@JoinColumn(name="partner_id")
-	private PartnerEntity partner;
+	@Column(nullable = false)
+	private String number;
+
+	@JsonIgnore
+	@ManyToMany(mappedBy = "contacts", cascade = CascadeType.ALL)
+	private Set<PersonEntity> people = new HashSet<>(); 
 	
-	@OneToOne
-	@JoinColumn(name = "company_id")
-	private CompanyEntity company;
-	
-	@OneToOne
-	@JoinColumn(name = "person_id")
-	private PersonEntity person;
+	@JsonIgnore
+	@ManyToMany(mappedBy = "contacts", cascade = CascadeType.ALL)
+	private Set<CompanyEntity> companies = new HashSet<>(); 
 	
 }

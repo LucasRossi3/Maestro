@@ -1,12 +1,17 @@
 package br.com.integracorp.entities;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -27,16 +32,23 @@ public class PersonEntity {
 	
 	@Column(nullable = false)
 	private String name;
+	
 	private String doc_rg;
 	private String doc_cpf;
+	
 	@JsonFormat(pattern="dd-MM-yyyy")
 	@Column(columnDefinition = "TIMESTAMP")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date birthday;
-	private String contact_1;
-	private String contact_2;
-	private String contact_3;
-	private String email;
+
+	@ManyToMany
+	@JoinTable(name="tb_person_contact",
+				joinColumns = @JoinColumn(name="person_id"),
+				inverseJoinColumns = @JoinColumn(name="contact_id"))
+	private Set<ContactEntity> contacts = new HashSet<>();
+
 	@OneToOne(mappedBy = "person")
 	private ClientEntity client;
+	
+	private String email;
 }
