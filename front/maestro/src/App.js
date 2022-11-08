@@ -1,7 +1,7 @@
 import './App.css';
 // Importing the Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
-import People from './views/People';
+import CRUD from './components/CRUD';
 
 function App() {
   const config =  {
@@ -23,13 +23,13 @@ function App() {
       "active":true,
     },
     "url": {
-      "address": "http://10.0.99.145",
+      "address": "http://10.0.1.215",
       "port": 8080
     }
 }
   return (
     <>
-      <People config={config}/>
+      <CRUD config={config}/>
     </>
   );
 }

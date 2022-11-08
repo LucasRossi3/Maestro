@@ -1,9 +1,16 @@
 import {React, useState} from 'react'
-import {Modal, Button, Table, Container} from 'reactstrap';
-
+import { 
+            Button,
+            Table,
+            Container,
+            Card,
+            CardBody,
+            CardTitle,
+        } from 'reactstrap';
+import PersonDetailEdit from './PersonDetailEdit';
 const PersonDetail = ({children,people,config}) => {
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -27,26 +34,29 @@ const PersonDetail = ({children,people,config}) => {
 
 
   return (
-    <Container>
-        <Table className='table table-striped'>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    people.map((p,i)=> (
-                        <tr key={i}>
-                            <td key={i}>{p.name}</td>
-                            <td key={i}><Button variant='warning'>Editar</Button><Button variant='danger'>Apagar</Button></td>
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </Table>
-    </Container>
+    <>
+        <Container>
+            <Table className='table table-striped'>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        people.map((p,i)=> (
+                            <tr key={i}>
+                                <td key={i}>{p.name}</td>
+                                <td key={i}><Button color='warning' className='mx-1' onClick={handleShow}>Editar</Button><Button color='danger'>Apagar</Button></td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </Table>
+        </Container>
+        <PersonDetailEdit />
+    </>
   )
 }
 
