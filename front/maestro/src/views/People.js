@@ -6,7 +6,7 @@ import  {
           Row,
           Col,
         } from 'reactstrap'
-import PersonDetai from '../components/PersonDetai'
+import PersonDetail from '../components/PersonDetail'
 
 const People = ({children,config}) => {
   const url = config.url.address + ":" + config.url.port
@@ -31,17 +31,20 @@ const People = ({children,config}) => {
     },[])
 
   return (
+    <>
+      
       <Container>
         <Card>
           <CardTitle className='CardTitle' tag={"h1"}>
             Dados dos moradores
           </CardTitle>
           <CardBody>
-            <PersonDetai/>
+            <PersonDetail people={people}/>
           </CardBody>
         </Card>
         
       </Container>
+    </>
     )
 }
 
