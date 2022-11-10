@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import { useCrud } from '../hooks/useCrud';
+
 import { 
           Button,
           Table,
@@ -10,25 +12,15 @@ import {
 
 const PeopleList = ({children,config}) => {
   const url = config.url.address + ":" + config.url.port
-  const [people,setPeople] = useState([]);
   const [name,setName] = useState('');
   const [doc_rg,setDoc_rg] = useState('');
   const [doc_cpf,setDoc_cpf] = useState('');
   const [birthday,setBirthday] = useState('');
   const [email,setEmail] = useState('');
  
-    /* RECEBE DADOS */
-    useEffect(() =>{
-      async function fetchData(){
-        let urlPeopleGet = url + "/people"
-         const res = await fetch(urlPeopleGet)
-        const data = await res.json()
-  
-        setPeople(data)
-      }
-      fetchData()
-  
-    },[])
+  /* RECEBE DADOS */
+  let urlPeopleGet = url + "/people";
+  const { data: people } = useCrud(urlPeopleGet);
 
   return (
     <>   
@@ -47,7 +39,7 @@ const PeopleList = ({children,config}) => {
                 </thead>
                 <tbody>
                     {
-                        people.map((p,i)=> (
+                        people && people.map((p,i)=> (
                             <tr key={i}>
                                 <td key={i}>{p.name}</td>
                                 <td>

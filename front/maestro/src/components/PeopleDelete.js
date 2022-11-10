@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { 
           Button,
           Table,
@@ -10,33 +10,53 @@ import {
 
 const PeopleDelete = ({children,config}) => {
   const url = config.url.address + ":" + config.url.port
-  const [people,setPeople] = useState([]);
+  const [people,setPeople] = useState(null);
+  const [personId,setPersonId] = useState(null);
   const [id,setId] = useState('');
   const [name,setName] = useState('');    
   const [doc_rg,setDoc_rg] = useState('');
   const [doc_cpf,setDoc_cpf] = useState('');
   const [birthday,setBirthday] = useState('');
   const [email,setEmail] = useState('');
- 
+  
+
     /* RECEBE DADOS */
-    useEffect(() =>{
-      async function fetchData(){
-        let urlPeopleGet = url + "/people"
-         const res = await fetch(urlPeopleGet)
-        const data = await res.json()
-  
-        setPeople(data)
-      }
-      fetchData()
-  
-    },[])
+    let urlPeopleGet = url + "/people";
+    const urlPeopleDelete = url + "/person/";
+    let urlPersonDelete = urlPeopleDelete;
+    
+    useEffect(()=>{
+      const httpRequest = async ()=>{
+        const response = await fetch(urlPeopleGet);
+
+        const json = await response.json();
+
+        setPeople(json);
+      };
+
+        httpRequest();
+    },[people, personId])
 
     /* APAGA PESSOA */
     function DeletePerson(id) {
-      console.log(id)
-  
-  
+      setPersonId(id);
     }
+
+    useEffect(()=>{
+      const httpRequest = async ()=>{
+        const response = await fetch(urlPersonDelete+personId,{
+                                                          method:"DELETE",
+                                                          headers: {"Content-type" : "apllication/json"},
+                                                        });
+        };
+       
+        if (personId)
+        {
+          console.log(personId)
+          httpRequest();
+          setPersonId(null);
+        }
+    },[personId])
       
   return (
     <>   
@@ -55,10 +75,10 @@ const PeopleDelete = ({children,config}) => {
                 </thead>
                 <tbody>
                     {
-                        people.map((p,i)=> (
+                        people && people.map((p,i)=> (
                             <tr key={i}>
                                 <td key={i}>{p.name}</td>
-                                <td onClick={() => DeletePerson(p.name)}><Button color='danger'>Apagar</Button></td>
+                                <td onClick={() => DeletePerson(p.id)}><Button color='danger'>Apagar</Button></td>
                             </tr>
                         ))
                     }
