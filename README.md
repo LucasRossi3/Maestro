@@ -64,4 +64,14 @@ Módulo de controle de acesso: Em qualquer um dos segmentos esse item funciona n
 - Figma;
 - Visual Studio Code;
 - Versionamento de código pelo GitHub;
+- Lucidchart
 - VM para testes iniciais (Oracle VBOX - Debian 11)
+
+# Links de documentações:
+- Diagrama de casos de uso: 
+	https://lucid.app/lucidchart/29219098-f6ed-4094-b1eb-d77a89ab21de/edit?beaconFlowId=55D3563DB805F653&invitationId=inv_9c534db4-1aca-46ed-be48-01fa7bfb496c&page=0_0#
+- Documentação de casos de uso: 
+	https://docs.google.com/document/d/1tAwxZu7mW3Qp9u33n3CkkHOPFQVcOW8jsGh0PyTV0SA/edit?usp=sharing
+- Diagrama de classes: 
+	https://lucid.app/lucidchart/c9aa15be-181e-4ee5-a5ef-e595188e6be1/edit?viewport_loc=-3625%2C145%2C3700%2C1759%2C0_0&invitationId=inv_1416dc4a-469a-4a27-97c9-1d1e836ccacc
+- Documentação: 
